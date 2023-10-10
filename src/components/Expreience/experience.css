@@ -1,7 +1,7 @@
 #experience {
     width: 100vw;
     margin: 0 auto;
-    padding: 0 4.5rem 5rem 3rem;
+    padding: 0 3rem 5rem 3rem;
 }
 
 .expTitle {
@@ -10,6 +10,11 @@
     text-align: center;
     font-family: 'Fraunces', serif;
     margin-bottom: 2rem;
+
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+        font-size: 3rem;
+    }
 }
 
 .skills {
@@ -21,29 +26,99 @@
     margin: 0 1rem; 
     height: 3rem;
     width: auto;
+
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+        margin: 0 0.3rem;
+        height: 1.5rem;
+        width: auto;
+    }
+
+    /* Media query for screens between 768px and 1024px */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        margin: 0 0.5rem;
+        height: 1.7rem;
+        width: auto;
+    }
 }
 
 .reacts {
     margin: 0 0.5rem; 
     height: 3rem;
     width: auto;
+
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+        margin: 0 0.3rem;
+        height: 1.5rem;
+        width: auto;
+    }
+
+    /* Media query for screens between 768px and 1024px */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        margin: 0 0.5rem;
+        height: 1.7rem;
+        width: auto;
+    }
 }
 
 .nodejs {
     margin: 0 1rem; 
     height: 4rem;
     width: auto;
+
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+        margin: 0 0.3rem;
+        height: 1.5rem;
+        width: auto;
+    }
+
+    /* Media query for screens between 768px and 1024px */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        margin: 0 0.5rem;
+        height: 1.7rem;
+        width: auto;
+    }
 }
 
 .java {
     margin: 0 0.5rem; 
     height: 3rem;
     width: auto;
+
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+        margin: 0 0.3rem;
+        height: 1.5rem;
+        width: auto;
+    }
+
+    /* Media query for screens between 768px and 1024px */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        margin: 0 0.5rem;
+        height: 1.7rem;
+        width: auto;
+    }
 }
 
 .techSpec {
     width: 2.7rem;
     margin: 1rem;
+    
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+        margin: 0 0.3rem;
+        height: 1.5rem;
+        width: auto;
+    }
+
+    /* Media query for screens between 768px and 1024px */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        margin: 0 0.5rem;
+        height: 1.7rem;
+        width: auto;
+    }
 }
 
 .grid-container {
@@ -52,6 +127,24 @@
     grid-auto-columns: auto;
     grid-column-gap: 25px;
     align-content: center;
+
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr)); /* Change to a single column layout */
+        gap: 20px; /* Adjust the gap for smaller screens */
+    }
+
+    /* Media query for screens between 769px and 1024px */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* Change to a two-column layout */
+        gap: 20px; /* Adjust the gap for medium-sized screens */
+    }
+
+    /* Media query for screens larger than 1024px */
+    @media (min-width: 1025px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr)); /* Return to the original four-column layout */
+        grid-column-gap: 25px; /* Restore the gap for larger screens */
+    }
 }
 
 .grid-container > div {

@@ -2,6 +2,10 @@
     width: 100vw;
     margin: 0 auto;
     padding: 4.5rem 5rem;
+
+    @media (max-width: 768px) {
+        padding: 4rem 2rem;
+    }
 }
 
 .aboutTitle {
@@ -9,11 +13,19 @@
     font-weight: 600;
     font-family: 'Fraunces', serif;
     margin-bottom: 4rem;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .row {
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .column {
@@ -34,6 +46,13 @@
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
+    
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+        font-size: smaller; /* Adjust the font size for smaller screens */
+        margin-bottom: 1rem; /* Reduce margin for smaller screens */
+        text-align: center;
+    }
 }
 
 .aboutDesc2 {
