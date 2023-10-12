@@ -5,6 +5,10 @@
     padding: 0 4.5rem;
     overflow: hidden;
     position: relative;
+
+    @media (max-width: 768px) {
+        padding: 0 1rem;
+    }
 }
 
 .bg {
@@ -29,16 +33,33 @@
 .hello {
     font-size: 1.75rem;
     font-weight: 400;
+
+    @media (max-width: 768px) {
+        font-size: 1.4rem;
+    }
 }
 
 .name {
     font-size: 4.5rem;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+        font-size: 4.15rem;
+        display: inline;
+    }
 }
 
 .aka {
     font-size: 1.75rem;
     font-weight: 400;
+    padding-left: 10px;
+
+    @media (max-width: 768px) {
+        font-size: 1.4rem;
+        padding-left: 0;
+        margin-bottom: 20px;
+        display: block;
+    }
 }
 
 .description {
@@ -47,6 +68,11 @@
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
     margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+        font-size: small;
+        padding-right: 30px;
+    }
 }
 
 .btn {
@@ -59,10 +85,21 @@
     font-family: 'Fraunces', serif;
     font-weight: 500;
     font-size: 1rem;
-}
+    width: fit-content;
 
-@media screen and (max-width:480px){
-    .bg {
-       right: -20vw
+    @media (max-width: 768px) {
+        margin-top: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    .bg {
+        height: 94vh;
+        right: -20vw;
+        filter: brightness(80%);
+    }
+
+    br {
+        display: none;
+    }
+  }

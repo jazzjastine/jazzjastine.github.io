@@ -50,6 +50,16 @@
     border-bottom: 3px solid white;
 }
 
+.menuBtn{
+    display: none;
+    width: 100%;
+    justify-content: end;
+
+    @media screen and (max-width:720px) {
+        display: flex;
+    }
+}
+
 .mobMenu{
     display: none;
     object-fit: cover;

@@ -6,7 +6,7 @@ import cprog from '../../assets/cprog.png';
 import bootstrap from '../../assets/bootstrap.png';
 import react from '../../assets/react.png';
 import node from '../../assets/node.png';
-import java from '../../assets/java.jpg';
+import java from '../../assets/javascript.png';
 import gdsc from '../../assets/gdsc.jpg';
 import cisco from '../../assets/cisco.jpg';
 import sas from '../../assets/sas.png';
@@ -35,13 +35,13 @@ function experience() {
                     <img className="bs" src={bootstrap} alt="" />
                 </td>
                 <td class="column tech">
+                    <img className="java" src={java} alt="" />
+                </td>
+                <td class="column tech">
                     <img className="reacts" src={react} alt="" />
                 </td>
                 <td class="column tech">
                     <img className="nodejs" src={node} alt="" />
-                </td>
-                <td class="column tech">
-                    <img className="java" src={java} alt="" />
                 </td>
             </tr>
         </table>
